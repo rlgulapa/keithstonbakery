@@ -10,8 +10,9 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
-  overflow-y: hidden;
+  padding: 0;
+
+  background-color: black;
 }
 
 /* Navigation */
@@ -20,13 +21,14 @@ img.main-logo {
 }
 
 .navigation-links {
-  padding: 22px;
+  padding: 20px 0 0 17px;
 }
 
 .navigation-links ul {
   display: flex;
   gap: 120px;
   list-style-type: none;
+  vertical-align: center;
   /* flex-wrap: wrap; */
 }
 
@@ -57,28 +59,68 @@ div.icons {
 /* End of Navigation */
 
 /* hero section */
-
 section.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  margin: 0 auto;
+  left: 20;
+  right: 0;
+  margin-top: 120px;
+}
+
+section.hero-section div {
+  width: 550px;
+}
+
+section.hero-section h1 {
+  color: #e6ba8e;
+  font-weight: 500;
+}
+
+section.hero-section div.text > p {
+  font-family: "Sansita Swashed", serif;
+  color: #f3f3f2;
+  font-size: 70px;
+  font-weight: 200;
+  margin-top: -10px;
+  padding-bottom: 100px;
+  padding-right: 10px;
+}
+
+section.hero-section img {
   position: absolute;
+  width: 1280.3px;
+  height: 770px;
   top: 0;
-  margin-top: 0;
-  overflow: hidden;
+  margin: 0 auto;
   left: 0;
+  right: 0;
+  text-align: center;
   z-index: -1;
 }
 
 button.main,
 button.contact {
-  width: 150px;
+  width: 180px;
   color: white;
-  background-color: #3bd950;
+  background-color: #933c22;
   padding: 10px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 10px;
   border: none;
   transition-duration: 500ms;
   transition-property: box-shadow;
+}
+
+.watch {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #e6ba8e;
+  margin-left: 20px;
 }
 
 button.main:hover {
@@ -93,87 +135,86 @@ button.contact i {
   margin-right: 10px;
 }
 
-button.play {
-  width: 60px;
-  height: 60px;
-  font-size: 1.2rem;
+/* TOP-PRODUCTS */
+
+h1.top {
+  font-family: "Sansita Swashed", serif;
+  width: 100%;
+  display: block;
+}
+section.top-products {
   background-color: white;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0px 10px 25px #9da09d8e;
+  width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
 }
-
-section.hero-section h1 > span {
-  color: #3bd950;
-}
-
-section.hero-section div.text > p {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 10px;
-}
-
-/* SPECIAL DISHES */
-.special-dishes div.menu-cards {
+.top-products div.menu-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 20px;
 }
-.special-dishes div.menu-cards div.card {
-  height: 500px;
-  width: 380px;
+.top-products div.menu-cards div.card {
+  background-image: url("images/top-products-background.png");
+  height: 411px;
+  width: 360px;
   border: 2px solid rgba(0, 0, 0, 0.045);
   border-radius: 8%;
   box-shadow: 0px 10px 25px #9da09d8e;
   padding: 30px;
   box-sizing: border-box;
 }
-.special-dishes div.menu-cards div.image > img {
+.top-products div.menu-cards div.image > img {
   display: block;
   margin: 0 auto;
 }
 
-.special-dishes div.menu-cards div.image {
+.top-products div.menu-cards div.image {
   height: 60%;
   margin-bottom: 10px;
 }
-.special-dishes div.menu-cards div.card div.content p.title {
+.top-products div.menu-cards div.card div.content p.title {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 20px 0px;
+  color: #f3f3f2;
 }
 
-.special-dishes div.menu-cards div.card div.content p.description {
-  font-size: 1.2rem;
+.top-products div.menu-cards div.card div.content p.description {
+  font-size: 1.5rem;
   font-weight: 500;
-  color: rgb(95, 94, 94);
+  color: #f3f3f2;
+  width: 150px;
+  float: left;
+  line-height: 27px;
 }
 
-.special-dishes div.menu-cards div.card div.content span.price {
+.top-products div.menu-cards div.card div.content span.price {
   font-size: 1.8rem;
   font-weight: 600;
+  color: #f3f3f2;
 }
 
-.special-dishes
-  div.menu-cards
-  div.card
-  div.content
-  span.price
-  i.fa-dollar-sign {
-  color: orangered;
-}
-
-.special-dishes div.menu-cards div.card div.content span.rating {
+.top-products .add {
+  width: 80px;
+  color: white;
+  background-color: #933c22;
+  padding: 10px;
   font-size: 1.4rem;
-  font-weight: 600;
-  color: rgb(89, 86, 86);
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
   float: right;
-}
-.special-dishes div.menu-cards div.card div.content span.rating i.fa-star {
-  margin-right: 10px;
-  color: rgb(235, 235, 0);
+  transition-duration: 500ms;
+  transition-property: box-shadow;
 }
 
 /* TESTIMONIALS */
