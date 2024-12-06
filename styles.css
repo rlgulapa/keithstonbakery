@@ -142,7 +142,6 @@ h1.top {
   font-size: 60px;
   font-weight: 500;
   width: 100%;
-  margin-top: 100px;
   height: 180px;
   display: block;
 }
@@ -157,6 +156,7 @@ section.top-products {
   margin: 0 auto;
   left: 0;
   right: 0;
+  padding: 100px 0;
   margin-top: 176px;
   margin-left: -40px;
 }
@@ -166,6 +166,7 @@ section.top-products {
   align-items: center;
   flex-wrap: wrap;
   column-gap: 20px;
+  margin-bottom: 20px;
 }
 .top-products div.menu-cards div.card {
   background-image: url("images/top-products-background.png");
